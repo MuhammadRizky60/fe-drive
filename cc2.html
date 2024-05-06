@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Biografi Profesional</title>
+        <style>
+            body {
+                font-family: "Arial", sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f4;
+                color: #333;
+            }
+            header {
+                background-color: #005792;
+                color: white;
+                padding: 20px 0;
+                text-align: center;
+            }
+            nav {
+                display: flex;
+                justify-content: center;
+                background-color: #02475e;
+                padding: 10px 0;
+            }
+            nav a {
+                color: white;
+                margin: 0 20px;
+                text-decoration: none;
+                font-size: 16px;
+            }
+            .container {
+                max-width: 960px;
+                margin: 20px auto;
+                background-color: white;
+                padding: 20px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+            .timeline {
+                position: relative;
+                padding: 20px;
+                margin-top: 20px;
+            }
+            .timeline::after {
+                content: "";
+                position: absolute;
+                width: 2px;
+                background-color: #005792;
+                top: 0;
+                bottom: 0;
+                left: 50%;
+                margin-left: -1px;
+            }
+            .event {
+                position: relative;
+                margin-bottom: 20px;
+                padding: 20px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                width: 40%;
+                background-color: #e8f0f2;
+            }
+            .event.left {
+                left: 0;
+            }
+            .event.right {
+                left: 60%;
+            }
+            .event::before {
+                content: "";
+                position: absolute;
+                width: 10px;
+                height: 10px;
+                background-color: #005792;
+                top: 20px;
+                border-radius: 50%;
+                z-index: 1;
+            }
+            .event.left::before {
+                right: -5px;
+            }
+            .event.right::before {
+                left: -5px;
+            }
+            footer {
+                background-color: #005792;
+                color: white;
+                text-align: center;
+                padding: 12px;
+                margin-top: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Biografi Michelle Thomson</h1>
+            <p>Inspirasi melalui Kepemimpinan dan Inovasi</p>
+        </header>
+        <nav>
+            <a href="#bio">Biografi</a>
+            <a href="#timeline">Timeline</a>
+            <a href="#gallery">Galeri</a>
+            <a href="#quotes">Kutipan</a>
+        </nav>
+        <div class="container" id="bio">
+            <h2>Biografi Singkat</h2>
+            <p>Muhammad Rizky adalah seorang inovator dan pemimpin bisnis yang telah memberikan kontribusi signifikan dalam teknologi informasi. Lahir di Aceh dan lulus dari UPN, ia telah menjadi sosok penting dalam revolusi digital.</p>
+        </div>
+        <div class="container" id="timeline">
+            <h2>Timeline Perjalanan Karier</h2>
+            <div class="timeline" style="margin-right: 20px">
+                <div class="event left">
+                    <h3>2004 - Lahir</h3>
+                    <p>Lahir di Aceh</p>
+                </div>
+                <div class="event right">
+                    <h3>2026 - Memulai Karier di Google</h3>
+                    <p>Memulai karier sebagai software engineer di Google.</p>
+                </div>
+                <div class="event left">
+                    <h3>2030 - CEO Startup AI</h3>
+                    <p>Menjadi CEO di sebuah startup AI yang inovatif, mengembangkan solusi untuk pendidikan.</p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>© 2024 Michelle Thomson. Hak Cipta Dilindungi.</p>
+        </footer>
+    </body>
+</html>
