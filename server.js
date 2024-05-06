@@ -3,7 +3,7 @@ const express = require("express");
 const app = express();
 
 app.get("/", (req, res) => {
-    res.sendFile("Hello from App Angine");
+     res.sendFile(path.join(__dirname, "cc2.html"));
 });
 
 const PORT = process.env.PORT || 8080;
