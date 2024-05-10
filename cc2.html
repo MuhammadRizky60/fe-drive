@@ -1,130 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Biografi Profesional</title>
-        <style>
-            body {
-                font-family: "Arial", sans-serif;
-                margin: 0;
-                padding: 0;
-                background-color: #f4f4f4;
-                color: #333;
-            }
-            header {
-                background-color: #005792;
-                color: white;
-                padding: 20px 0;
-                text-align: center;
-            }
-            nav {
-                display: flex;
-                justify-content: center;
-                background-color: #02475e;
-                padding: 10px 0;
-            }
-            nav a {
-                color: white;
-                margin: 0 20px;
-                text-decoration: none;
-                font-size: 16px;
-            }
-            .container {
-                max-width: 960px;
-                margin: 20px auto;
-                background-color: white;
-                padding: 20px;
-                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            }
-            .timeline {
-                position: relative;
-                padding: 20px;
-                margin-top: 20px;
-            }
-            .timeline::after {
-                content: "";
-                position: absolute;
-                width: 2px;
-                background-color: #005792;
-                top: 0;
-                bottom: 0;
-                left: 50%;
-                margin-left: -1px;
-            }
-            .event {
-                position: relative;
-                margin-bottom: 20px;
-                padding: 20px;
-                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-                width: 40%;
-                background-color: #e8f0f2;
-            }
-            .event.left {
-                left: 0;
-            }
-            .event.right {
-                left: 60%;
-            }
-            .event::before {
-                content: "";
-                position: absolute;
-                width: 10px;
-                height: 10px;
-                background-color: #005792;
-                top: 20px;
-                border-radius: 50%;
-                z-index: 1;
-            }
-            .event.left::before {
-                right: -5px;
-            }
-            .event.right::before {
-                left: -5px;
-            }
-            footer {
-                background-color: #005792;
-                color: white;
-                text-align: center;
-                padding: 12px;
-                margin-top: 20px;
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-            <h1>Biografi Michelle Thomson</h1>
-            <p>Inspirasi melalui Kepemimpinan dan Inovasi</p>
-        </header>
-        <nav>
-            <a href="#bio">Biografi</a>
-            <a href="#timeline">Timeline</a>
-            <a href="#gallery">Galeri</a>
-            <a href="#quotes">Kutipan</a>
-        </nav>
-        <div class="container" id="bio">
-            <h2>Biografi Singkat</h2>
-            <p>Muhammad Rizky adalah seorang inovator dan pemimpin bisnis yang telah memberikan kontribusi signifikan dalam teknologi informasi. Lahir di Aceh dan lulus dari UPN, ia telah menjadi sosok penting dalam revolusi digital.</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Driver Profesional</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+        header {
+            background-color: #121212;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333333;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #ffffff;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .container {
+            max-width: 960px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .timeline {
+            position: relative;
+            padding: 20px;
+            margin-top: 20px;
+            background-color: #e9ecef;
+            border-left: 3px solid #007bff;
+        }
+        .event {
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+        footer {
+            background-color: #121212;
+            color: #ffffff;
+            text-align: center;
+            padding: 12px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>John Doe - Driver Profesional</h1>
+        <p>Mengemudi dengan Keahlian dan Keselamatan</p>
+    </header>
+    <nav>
+        <a href="#bio">Profil</a>
+        <a href="#gallery">Galeri</a>
+        <a href="#timeline">Karir</a>
+        <a href="#tips">Tips Berkendara</a>
+    </nav>
+    <div class="container" id="bio">
+        <h2>Profil Singkat</h2>
+        <p>John Doe adalah seorang driver profesional dengan lebih dari 15 tahun pengalaman dalam mengemudi berbagai jenis kendaraan, dari sedan hingga truk besar. Dikenal dengan rekam jejak keselamatan yang luar biasa dan pengetahuan mendalam tentang perawatan kendaraan.</p>
+    </div>
+    <div class="container" id="gallery">
+        <h2>Galeri</h2>
+        <div class="gallery">
+            <img src="https://via.placeholder.com/300x200" alt="Driving in the city">
+            <img src="https://via.placeholder.com/300x200" alt="Scenic route">
+            <img src="https://via.placeholder.com/300x200" alt="John with his vehicle">
         </div>
-        <div class="container" id="timeline">
-            <h2>Timeline Perjalanan Karier</h2>
-            <div class="timeline" style="margin-right: 20px">
-                <div class="event left">
-                    <h3>2004 - Lahir</h3>
-                    <p>Lahir di Aceh</p>
-                </div>
-                <div class="event right">
-                    <h3>2026 - Memulai Karier di Google</h3>
-                    <p>Memulai karier sebagai software engineer di Google.</p>
-                </div>
-                <div class="event left">
-                    <h3>2030 - CEO Startup AI</h3>
-                    <p>Menjadi CEO di sebuah startup AI yang inovatif, mengembangkan solusi untuk pendidikan.</p>
-                </div>
+    </div>
+    <div class="container" id="timeline">
+        <h2>Karir</h2>
+        <div class="timeline">
+            <div class="event">
+                <h3>2005 - Memulai Karir</h3>
+                <p>Mulai mengemudi sebagai sopir taksi di New York.</p>
+            </div>
+            <div class="event">
+                <h3>2010 - Ekspansi Ke Truk Berat</h3>
+                <p>Berpindah ke mengemudi truk berat, mengantarkan barang antar negara bagian.</p>
+            </div>
+            <div class="event">
+                <h3>2018 - Sertifikasi Keamanan</h3>
+                <p>Memperoleh sertifikasi keamanan tingkat lanjut untuk pengemudi truk.</p>
             </div>
         </div>
-        <footer>
-            <p>© 2024 Michelle Thomson. Hak Cipta Dilindungi.</p>
-        </footer>
-    </body>
+    </div>
+    <div class="container" id="tips">
+        <h2>Tips Berkendara</h2>
+        <ul>
+            <li>Periksa selalu kondisi kendaraan sebelum berkendara.</li>
+            <li>Mengikuti aturan lalu lintas dan sinyal dengan cermat.</li>
+            <li>Pentingnya istirahat yang cukup untuk pengemudi jarak jauh.</li>
+        </ul>
+    </div>
+    <footer>
+        <p>© 2024 John Doe. Hak Cipta Dilindungi.</p>
+    </footer>
+</body>
 </html>
